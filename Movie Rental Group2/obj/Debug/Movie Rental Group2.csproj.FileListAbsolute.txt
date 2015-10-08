@@ -1,0 +1,6 @@
+C:\Users\Sleazy P Martini\Documents\Visual Studio 2015\Projects\Movie Rental Group2\Movie Rental Group2\bin\Debug\Movie Rental Group2.exe.config
+C:\Users\Sleazy P Martini\Documents\Visual Studio 2015\Projects\Movie Rental Group2\Movie Rental Group2\bin\Debug\Movie Rental Group2.exe
+C:\Users\Sleazy P Martini\Documents\Visual Studio 2015\Projects\Movie Rental Group2\Movie Rental Group2\bin\Debug\Movie Rental Group2.pdb
+C:\Users\Sleazy P Martini\Documents\Visual Studio 2015\Projects\Movie Rental Group2\Movie Rental Group2\obj\Debug\Movie Rental Group2.exe
+C:\Users\Sleazy P Martini\Documents\Visual Studio 2015\Projects\Movie Rental Group2\Movie Rental Group2\obj\Debug\Movie Rental Group2.pdb
+C:\Users\Sleazy P Martini\Documents\Visual Studio 2015\Projects\Movie Rental Group2\Movie Rental Group2\obj\Debug\Movie Rental Group2.csprojResolveAssemblyReference.cache
