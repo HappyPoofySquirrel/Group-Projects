@@ -11,32 +11,33 @@ namespace Movie_Rental_Group2
         static void Main(string[] args)
         {
             Dictionary<string, DateTime> filmRental = new Dictionary<string, DateTime>();
-            string answer1 = "HI";
+            string answer1 = "SQUIRRELS ARE AMAZING";
 
             while (answer1 != "close")
             {
-                Console.WriteLine("enter add, returns, overdue, close");
+                Console.WriteLine(" **********PARTY PARTY PARTY ********* \n Enter 1: to add entries \n Enter 2: to return a video \n Enter 3: to check overdue accounts");
                 string answerxx = Console.ReadLine();
                 answer1 = answerxx.ToLower();
-                if (answer1 == "add")
+                if (answer1 == "1")
                 {
                     addEntries(filmRental); //calling method to add entry
                 }
 
-                else if (answer1 == "overdue")
+                else if (answer1 == "3")
                 {
                     printOverdue(filmRental);
                     // calling method to print all overdue
                 }
-                else if (answer1 == "returns")
+                else if (answer1 == "2")
                 {
                     returns(filmRental);
                 }
 
-                else
+                else if (answer1 !="1" || answer1 != "2" || answer1 != "3")
                 {
-                    Console.WriteLine("check syntax or spelling");
+                    Console.WriteLine("check syntax");
                 }
+                else { }
 
 
             }
@@ -56,7 +57,7 @@ namespace Movie_Rental_Group2
                 }
                 else
                 {
-                    continue;
+                    Console.WriteLine("There are no entries to retrieve!!");
                 }
             }
         }  //closing for overdue method
@@ -65,7 +66,7 @@ namespace Movie_Rental_Group2
         static Dictionary<string, DateTime> addEntries(Dictionary<string, DateTime> filmRental)  //add entries method 
         {
 
-            DateTime dueDate2 = DateTime.Now.Date.AddDays(3);  //prints as overdue 
+           // DateTime dueDate2 = DateTime.Now.Date.AddDays(3);  //prints as overdue 
                                                                //  DateTime dueDate = DateTime.Now.Date.AddDays(7); //value of the key
 
             // filmRental.Add(" tim, donut", dueDate2);
@@ -81,7 +82,7 @@ namespace Movie_Rental_Group2
 
 
 
-            DateTime dueDate = DateTime.Now.Date.AddDays(7); //value of the key
+            DateTime dueDate = DateTime.Now.Date.AddDays(7); //CHANGE TO 3 TO MAKE OVERDUE
 
 
             filmRental.Add(key, dueDate);  //adding entry to the dictionary 
@@ -114,6 +115,10 @@ namespace Movie_Rental_Group2
                 {
                     Console.WriteLine(returnedMovie + " owes $5");
                 }
+            }
+            else
+            {
+                Console.WriteLine("Entry Not Found");
             }
             filmRental.Remove(returnedMovie);
             return filmRental;
